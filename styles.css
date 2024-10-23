@@ -1,39 +1,31 @@
-body, html {
-    height: 100%;
-    margin: 0;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    overflow: hidden;
-}
-
-.container {
-    position: relative;
-    width: 100%;
-    height: 100%;
+body {
     background: white;
+    height: 100vh;
     display: flex;
-    align-items: center;
     justify-content: center;
-    font-size: 3em;
-    font-family: Arial, sans-serif;
-    color: black;
-    z-index: 1;
-    transition: color 0.3s ease;
+    align-items: center;
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+    font-family: 'Roboto', sans-serif;
 }
 
-.container h1 {
+h1 {
     position: absolute;
     z-index: 2;
+    font-size: 3em;
+    color: black;
+    pointer-events: none;
 }
 
-body {
-    background: url('rainbow.jpeg') no-repeat center center fixed;
+span {
+    width: 250px;
+    height: 250px;
+    position: absolute;
+    background: url('rainbow.jpg'); /* Use your rainbow image here */
+    pointer-events: none;
+    border-radius: 50%;
     background-size: cover;
-    clip-path: circle(0% at 50% 50%);
-    transition: clip-path 0.5s ease-in-out;
-}
-
-body:hover {
-    clip-path: circle(150% at 50% 50%);
+    background-attachment: fixed;
+    mix-blend-mode: screen;
 }
