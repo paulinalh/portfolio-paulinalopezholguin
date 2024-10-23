@@ -28,7 +28,7 @@ body, html {
 }
 
 body {
-    background: url('rainbow.jpg') no-repeat center center fixed;
+    background: url('rainbow.jpeg') no-repeat center center fixed;
     background-size: cover;
     clip-path: circle(0% at 50% 50%);
     transition: clip-path 0.5s ease-in-out;
