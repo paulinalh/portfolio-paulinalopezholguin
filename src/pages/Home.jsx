@@ -69,11 +69,11 @@ const Home = () => {
           <Bird/>
           <Plane
           isRotating={isRotating}
-          //position={biplanePosition}
+          planeScale={planeScale}
+          planePosition={planePosition}
           rotation={[0, 20.1, 0]}
-          //scale={biplaneScale}
           />
-          <Sky/>
+          <Sky isRotating={isRotating}/>
         </Suspense>
       </Canvas>
       
